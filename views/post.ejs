@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data of user</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="css/post.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row aaa">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="well well-sm">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <img
+                  src="<%= imgurl %>"
+                  alt=""
+                  class="img-rounded img-responsive"
+                  height="300px"
+                  width="300px"
+                />
+              </div>
+              <div class="col-sm-6 col-md-8">
+                <h2><%= data %><%= subname %></h2>
+                <p>
+                  
+                  <i class="glyphicon glyphicon-globe"></i
+                  ><a href="<%=profileurl%>" target="_blank"
+                    >Link To GitHub Profile</a
+                  >
+                  <br />
+                  <i class="glyphicon glyphicon-gift"></i><%=repos%> public
+                  repositries
+                  <br />
+                  <i class="glyphicon glyphicon-globe"></i>User created at <%=created%>
+                  <br />
+                  <i class="glyphicon glyphicon-globe"></i> <%=fol%> followers 
+                </p>
+                <!-- Split button -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- 
+
+GRADIENT BANNER DESIGN BY SIMON LURWER ON DRIBBBLE:
+https://dribbble.com/shots/14101951-Banners
+
+-->
+<div class="main-container">
+  <div class="heading">
+    <h1 class="heading__title">GitHub Repositories of <%=data%></h1> 
+   
+  </div>
+  <div class="cards">
+    <%for(j=0;j<naam.length;j++){%>
+    <div class="card card-1">
+      <div class="card__icon"><i class="fas fa-bolt"><%=naam[j]%></i></div>
+      <p class="card__exit"><i class="fas fa-times">Created at <%=repoC[j]%></i></p>
+      <h2 class="card__title">Language Used: <%=lang[j]%></h2>
+      <p class="card__apply">
+        <a class="card__link"target="_blank" href="https://www.github.com/<%=data%>/<%=naam[j]%>"><i class="fas fa-arrow-right">Link to github Repositry</i></a>
+      </p>
+    </div>
+    <%}%>
+  </div>
+</div>
+    
+
+   
+  </body>
+</html>

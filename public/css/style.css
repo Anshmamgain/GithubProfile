@@ -1,0 +1,33 @@
+.epic {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 20%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border: 5px solid white;
+  font-family: 'Rajdhani', sans-serif;
+  border-radius: 10px;
+  height: 90%;
+  background-image: linear-gradient(to bottom, #000000, #131313, #1f1f1f, #2c2c2c, #393939);}
+  
+  body{
+  background: rgba(183, 35, 241, 1.0);
+    background: -webkit-linear-gradient(right, rgba(183, 35, 241, 1.0), rgba(255, 93, 91, 1.0));
+    background: -moz-linear-gradient(right, rgba(183, 35, 241, 1.0), rgba(255, 93, 91, 1.0));
+    background: linear-gradient(to left, rgba(183, 35, 241, 1.0), rgba(255, 93, 91, 1.0)); 
+   }  
+.input{
+    width: 70%;
+    height: 50px;
+    border-radius: 50px;
+    font-size:15px;
+    text-align: center;
+    border-color: transparent;
+    outline: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    
+
+}
